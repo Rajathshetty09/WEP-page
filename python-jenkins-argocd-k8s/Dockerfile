@@ -13,5 +13,5 @@ COPY . .
 # Run migrations
 RUN python manage.py migrate
 
-# Start server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:5000"]
+# Start server on port 3000
+CMD ["python", "manage.py", "runserver", "0.0.0.0:3000"]
